@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D794F73328DE6EA9006E0DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F73228DE6EA9006E0DF2 /* AppDelegate.swift */; };
 		D794F73528DE6EA9006E0DF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F73428DE6EA9006E0DF2 /* SceneDelegate.swift */; };
-		D794F73728DE6EA9006E0DF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F73628DE6EA9006E0DF2 /* ViewController.swift */; };
+		D794F73728DE6EA9006E0DF2 /* NYCSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F73628DE6EA9006E0DF2 /* NYCSchoolViewController.swift */; };
 		D794F73A28DE6EA9006E0DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D794F73828DE6EA9006E0DF2 /* Main.storyboard */; };
 		D794F73C28DE6EAC006E0DF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D794F73B28DE6EAC006E0DF2 /* Assets.xcassets */; };
 		D794F73F28DE6EAC006E0DF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D794F73D28DE6EAC006E0DF2 /* LaunchScreen.storyboard */; };
@@ -50,6 +50,12 @@
 		D794F79528DE8CB4006E0DF2 /* SatScoreDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F79428DE8CB4006E0DF2 /* SatScoreDataSource.swift */; };
 		D794F79628DE8CB4006E0DF2 /* SatScoreDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F79428DE8CB4006E0DF2 /* SatScoreDataSource.swift */; };
 		D794F79728DE8CB4006E0DF2 /* SatScoreDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F79428DE8CB4006E0DF2 /* SatScoreDataSource.swift */; };
+		D794F79E28DF33B8006E0DF2 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F79D28DF33B8006E0DF2 /* FileManager.swift */; };
+		D794F79F28DF33B8006E0DF2 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F79D28DF33B8006E0DF2 /* FileManager.swift */; };
+		D794F7A028DF33B8006E0DF2 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F79D28DF33B8006E0DF2 /* FileManager.swift */; };
+		D794F7A228DF33C8006E0DF2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F7A128DF33C8006E0DF2 /* NetworkManager.swift */; };
+		D794F7A328DF33C8006E0DF2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F7A128DF33C8006E0DF2 /* NetworkManager.swift */; };
+		D794F7A428DF33C8006E0DF2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F7A128DF33C8006E0DF2 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +79,7 @@
 		D794F72F28DE6EA9006E0DF2 /* NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYCSchools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D794F73228DE6EA9006E0DF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D794F73428DE6EA9006E0DF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D794F73628DE6EA9006E0DF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D794F73628DE6EA9006E0DF2 /* NYCSchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolViewController.swift; sourceTree = "<group>"; };
 		D794F73928DE6EA9006E0DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D794F73B28DE6EAC006E0DF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D794F73E28DE6EAC006E0DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -95,6 +101,8 @@
 		D794F78B28DE7979006E0DF2 /* SatScoreInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatScoreInterface.swift; sourceTree = "<group>"; };
 		D794F79028DE8CA0006E0DF2 /* SchoolDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDataSource.swift; sourceTree = "<group>"; };
 		D794F79428DE8CB4006E0DF2 /* SatScoreDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatScoreDataSource.swift; sourceTree = "<group>"; };
+		D794F79D28DF33B8006E0DF2 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		D794F7A128DF33C8006E0DF2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +133,7 @@
 		D794F72628DE6EA9006E0DF2 = {
 			isa = PBXGroup;
 			children = (
+				D794F79828DF2507006E0DF2 /* Utils */,
 				D794F78F28DE8C7A006E0DF2 /* DataSource */,
 				D794F76728DE75F8006E0DF2 /* Assets */,
 				D794F76628DE75EF006E0DF2 /* Model */,
@@ -191,7 +200,7 @@
 		D794F76328DE75C1006E0DF2 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				D794F73628DE6EA9006E0DF2 /* ViewController.swift */,
+				D794F73628DE6EA9006E0DF2 /* NYCSchoolViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -239,6 +248,15 @@
 				D794F79428DE8CB4006E0DF2 /* SatScoreDataSource.swift */,
 			);
 			path = DataSource;
+			sourceTree = "<group>";
+		};
+		D794F79828DF2507006E0DF2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D794F79D28DF33B8006E0DF2 /* FileManager.swift */,
+				D794F7A128DF33C8006E0DF2 /* NetworkManager.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,9 +394,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D794F79E28DF33B8006E0DF2 /* FileManager.swift in Sources */,
 				D794F78428DE78E9006E0DF2 /* SatScoreViewModel.swift in Sources */,
-				D794F73728DE6EA9006E0DF2 /* ViewController.swift in Sources */,
+				D794F73728DE6EA9006E0DF2 /* NYCSchoolViewController.swift in Sources */,
 				D794F77C28DE78AD006E0DF2 /* SatScorePresenter.swift in Sources */,
+				D794F7A228DF33C8006E0DF2 /* NetworkManager.swift in Sources */,
 				D794F73328DE6EA9006E0DF2 /* AppDelegate.swift in Sources */,
 				D794F79128DE8CA0006E0DF2 /* SchoolDataSource.swift in Sources */,
 				D794F73528DE6EA9006E0DF2 /* SceneDelegate.swift in Sources */,
@@ -403,7 +423,9 @@
 				D794F77828DE788E006E0DF2 /* SchoolPresenter.swift in Sources */,
 				D794F77D28DE78AD006E0DF2 /* SatScorePresenter.swift in Sources */,
 				D794F79228DE8CA0006E0DF2 /* SchoolDataSource.swift in Sources */,
+				D794F79F28DF33B8006E0DF2 /* FileManager.swift in Sources */,
 				D794F74A28DE6EAC006E0DF2 /* NYCSchoolsTests.swift in Sources */,
+				D794F7A328DF33C8006E0DF2 /* NetworkManager.swift in Sources */,
 				D794F77428DE7874006E0DF2 /* SatScore.swift in Sources */,
 				D794F79628DE8CB4006E0DF2 /* SatScoreDataSource.swift in Sources */,
 				D794F77028DE784A006E0DF2 /* School.swift in Sources */,
@@ -417,6 +439,7 @@
 				D794F77E28DE78AD006E0DF2 /* SatScorePresenter.swift in Sources */,
 				D794F78E28DE7979006E0DF2 /* SatScoreInterface.swift in Sources */,
 				D794F75428DE6EAC006E0DF2 /* NYCSchoolsUITests.swift in Sources */,
+				D794F7A028DF33B8006E0DF2 /* FileManager.swift in Sources */,
 				D794F78628DE78E9006E0DF2 /* SatScoreViewModel.swift in Sources */,
 				D794F77928DE788E006E0DF2 /* SchoolPresenter.swift in Sources */,
 				D794F77528DE7874006E0DF2 /* SatScore.swift in Sources */,
@@ -424,6 +447,7 @@
 				D794F77128DE784A006E0DF2 /* School.swift in Sources */,
 				D794F75628DE6EAC006E0DF2 /* NYCSchoolsUITestsLaunchTests.swift in Sources */,
 				D794F78A28DE795E006E0DF2 /* SchoolInterface.swift in Sources */,
+				D794F7A428DF33C8006E0DF2 /* NetworkManager.swift in Sources */,
 				D794F79728DE8CB4006E0DF2 /* SatScoreDataSource.swift in Sources */,
 				D794F78228DE78CB006E0DF2 /* SchoolViewModel.swift in Sources */,
 			);

@@ -22,12 +22,38 @@ class NYCSchoolsTests: XCTestCase {
         
         let resultSchools =  SchoolDataSource.importSchoolDataSource(name: "f9bf-2cp4-schools")
         
-        XCTAssertFalse(resultSchools.count == 0)
+        if let resultSchools = resultSchools {
+            XCTAssertFalse(resultSchools.count == 0)
+            
+            let models = SchoolInterface.valueObjectsFromModel(objects: resultSchools)
+            
+            XCTAssertFalse(models.count == 0)
+            
+        }
         
+
         let resultScores = SatScoreDataSource.importSatScoreDataSource(name: "f9bf-2cp4-sat")
         
-        XCTAssertFalse(resultScores.count == 0)
-
+        if let resultScores = resultScores {
+            XCTAssertFalse(resultScores.count == 0)
+            let models = SatScoreInterface.valueObjectsFromModel(objects: resultScores)
+            XCTAssertFalse(models.count == 0)
+        }
+        
+    }
+    
+    func testpresenterSchool() throws {
+        let presenter = SchoolPresenter(dataSourceSchools: "f9bf-2cp4-schools", dataSourceScores: "f9bf-2cp4-sat")
+        
+        if let vmSchools = presenter.viewModelSchools {
+            XCTAssertFalse(vmSchools.count == 0)
+        }
+        
+        if let vmScores = presenter.viewModelScores {
+            XCTAssertFalse(vmScores.count == 0)
+        }
+        
+        
     }
 
 }
