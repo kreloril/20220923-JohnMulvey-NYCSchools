@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6A1A82A2-9B9F-4408-8D22-392583618BA6"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "37AC69D6-1C27-4AEA-BCA1-F2CF08428031"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DataSource/SchoolDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "importSchoolDataSource(name:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "37AC69D6-1C27-4AEA-BCA1-F2CF08428031 - 8016fd2a03f2f5ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static NYCSchools.SchoolDataSource.importSchoolDataSource(name: Swift.String) -&gt; Swift.Dictionary&lt;Swift.String, NYCSchools.School&gt;"
+                  moduleName = "NYCSchools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/johnmulvey/projects/20220923JohnMulvey-NYCSchools/DataSource/SchoolDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "991">
+               </Location>
+               <Location
+                  uuid = "37AC69D6-1C27-4AEA-BCA1-F2CF08428031 - 55f5e07af6c6d767"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static NYCSchoolsTests.SchoolDataSource.importSchoolDataSource(name: Swift.String) -&gt; Swift.Dictionary&lt;Swift.String, NYCSchoolsTests.School&gt;"
+                  moduleName = "NYCSchoolsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/johnmulvey/projects/20220923JohnMulvey-NYCSchools/DataSource/SchoolDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "991">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C3F327A1-8554-435A-BA42-44DC23376244"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DataSource/SchoolDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "importSchoolDataSource(name:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C3F327A1-8554-435A-BA42-44DC23376244 - 8016fd2a03f2f662"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static NYCSchools.SchoolDataSource.importSchoolDataSource(name: Swift.String) -&gt; Swift.Dictionary&lt;Swift.String, NYCSchools.School&gt;"
+                  moduleName = "NYCSchools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/johnmulvey/projects/20220923JohnMulvey-NYCSchools/DataSource/SchoolDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "12075">
+               </Location>
+               <Location
+                  uuid = "C3F327A1-8554-435A-BA42-44DC23376244 - 55f5e07af6c6d4eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static NYCSchoolsTests.SchoolDataSource.importSchoolDataSource(name: Swift.String) -&gt; Swift.Dictionary&lt;Swift.String, NYCSchoolsTests.School&gt;"
+                  moduleName = "NYCSchoolsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/johnmulvey/projects/20220923JohnMulvey-NYCSchools/DataSource/SchoolDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "12075">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E584E5F2-319E-4902-A6D1-F00136592DD7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DataSource/SchoolDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "importSchoolDataSource(name:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E584E5F2-319E-4902-A6D1-F00136592DD7 - 8016fd2a03f2f645"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static NYCSchools.SchoolDataSource.importSchoolDataSource(name: Swift.String) -&gt; Swift.Dictionary&lt;Swift.String, NYCSchools.School&gt;"
+                  moduleName = "NYCSchools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/johnmulvey/projects/20220923JohnMulvey-NYCSchools/DataSource/SchoolDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "12265">
+               </Location>
+               <Location
+                  uuid = "E584E5F2-319E-4902-A6D1-F00136592DD7 - 55f5e07af6c6d4cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static NYCSchoolsTests.SchoolDataSource.importSchoolDataSource(name: Swift.String) -&gt; Swift.Dictionary&lt;Swift.String, NYCSchoolsTests.School&gt;"
+                  moduleName = "NYCSchoolsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/johnmulvey/projects/20220923JohnMulvey-NYCSchools/DataSource/SchoolDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "12265">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
