@@ -9,4 +9,13 @@ import UIKit
 
 class SatScorePresenter: NSObject {
 
+    var selectedSchool:SchoolViewModel?
+    var selectedScore:SatScoreViewModel?
+    
+    init(with score:SatScoreViewModel, with school:SchoolViewModel) {
+        super.init()
+        
+        selectedSchool = school
+        selectedScore = score
+    }
 }
