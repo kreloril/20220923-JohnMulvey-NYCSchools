@@ -16,6 +16,40 @@
 		D794F74A28DE6EAC006E0DF2 /* NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F74928DE6EAC006E0DF2 /* NYCSchoolsTests.swift */; };
 		D794F75428DE6EAC006E0DF2 /* NYCSchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F75328DE6EAC006E0DF2 /* NYCSchoolsUITests.swift */; };
 		D794F75628DE6EAC006E0DF2 /* NYCSchoolsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F75528DE6EAC006E0DF2 /* NYCSchoolsUITestsLaunchTests.swift */; };
+		D794F76A28DE7795006E0DF2 /* f9bf-2cp4-schools.json in Resources */ = {isa = PBXBuildFile; fileRef = D794F76828DE7795006E0DF2 /* f9bf-2cp4-schools.json */; };
+		D794F76B28DE7795006E0DF2 /* f9bf-2cp4-schools.json in Resources */ = {isa = PBXBuildFile; fileRef = D794F76828DE7795006E0DF2 /* f9bf-2cp4-schools.json */; };
+		D794F76C28DE7795006E0DF2 /* f9bf-2cp4-sat.json in Resources */ = {isa = PBXBuildFile; fileRef = D794F76928DE7795006E0DF2 /* f9bf-2cp4-sat.json */; };
+		D794F76D28DE7795006E0DF2 /* f9bf-2cp4-sat.json in Resources */ = {isa = PBXBuildFile; fileRef = D794F76928DE7795006E0DF2 /* f9bf-2cp4-sat.json */; };
+		D794F76F28DE784A006E0DF2 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F76E28DE784A006E0DF2 /* School.swift */; };
+		D794F77028DE784A006E0DF2 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F76E28DE784A006E0DF2 /* School.swift */; };
+		D794F77128DE784A006E0DF2 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F76E28DE784A006E0DF2 /* School.swift */; };
+		D794F77328DE7874006E0DF2 /* SatScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F77228DE7874006E0DF2 /* SatScore.swift */; };
+		D794F77428DE7874006E0DF2 /* SatScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F77228DE7874006E0DF2 /* SatScore.swift */; };
+		D794F77528DE7874006E0DF2 /* SatScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F77228DE7874006E0DF2 /* SatScore.swift */; };
+		D794F77728DE788E006E0DF2 /* SchoolPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F77628DE788E006E0DF2 /* SchoolPresenter.swift */; };
+		D794F77828DE788E006E0DF2 /* SchoolPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F77628DE788E006E0DF2 /* SchoolPresenter.swift */; };
+		D794F77928DE788E006E0DF2 /* SchoolPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F77628DE788E006E0DF2 /* SchoolPresenter.swift */; };
+		D794F77C28DE78AD006E0DF2 /* SatScorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F77B28DE78AD006E0DF2 /* SatScorePresenter.swift */; };
+		D794F77D28DE78AD006E0DF2 /* SatScorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F77B28DE78AD006E0DF2 /* SatScorePresenter.swift */; };
+		D794F77E28DE78AD006E0DF2 /* SatScorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F77B28DE78AD006E0DF2 /* SatScorePresenter.swift */; };
+		D794F78028DE78CB006E0DF2 /* SchoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F77F28DE78CB006E0DF2 /* SchoolViewModel.swift */; };
+		D794F78128DE78CB006E0DF2 /* SchoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F77F28DE78CB006E0DF2 /* SchoolViewModel.swift */; };
+		D794F78228DE78CB006E0DF2 /* SchoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F77F28DE78CB006E0DF2 /* SchoolViewModel.swift */; };
+		D794F78428DE78E9006E0DF2 /* SatScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F78328DE78E9006E0DF2 /* SatScoreViewModel.swift */; };
+		D794F78528DE78E9006E0DF2 /* SatScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F78328DE78E9006E0DF2 /* SatScoreViewModel.swift */; };
+		D794F78628DE78E9006E0DF2 /* SatScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F78328DE78E9006E0DF2 /* SatScoreViewModel.swift */; };
+		D794F78828DE795E006E0DF2 /* SchoolInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F78728DE795E006E0DF2 /* SchoolInterface.swift */; };
+		D794F78928DE795E006E0DF2 /* SchoolInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F78728DE795E006E0DF2 /* SchoolInterface.swift */; };
+		D794F78A28DE795E006E0DF2 /* SchoolInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F78728DE795E006E0DF2 /* SchoolInterface.swift */; };
+		D794F78C28DE7979006E0DF2 /* SatScoreInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F78B28DE7979006E0DF2 /* SatScoreInterface.swift */; };
+		D794F78D28DE7979006E0DF2 /* SatScoreInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F78B28DE7979006E0DF2 /* SatScoreInterface.swift */; };
+		D794F78E28DE7979006E0DF2 /* SatScoreInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F78B28DE7979006E0DF2 /* SatScoreInterface.swift */; };
+		D794F79128DE8CA0006E0DF2 /* SchoolDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F79028DE8CA0006E0DF2 /* SchoolDataSource.swift */; };
+		D794F79228DE8CA0006E0DF2 /* SchoolDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F79028DE8CA0006E0DF2 /* SchoolDataSource.swift */; };
+		D794F79328DE8CA0006E0DF2 /* SchoolDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F79028DE8CA0006E0DF2 /* SchoolDataSource.swift */; };
+		D794F79528DE8CB4006E0DF2 /* SatScoreDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F79428DE8CB4006E0DF2 /* SatScoreDataSource.swift */; };
+		D794F79628DE8CB4006E0DF2 /* SatScoreDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F79428DE8CB4006E0DF2 /* SatScoreDataSource.swift */; };
+		D794F79728DE8CB4006E0DF2 /* SatScoreDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F79428DE8CB4006E0DF2 /* SatScoreDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +83,18 @@
 		D794F74F28DE6EAC006E0DF2 /* NYCSchoolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYCSchoolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D794F75328DE6EAC006E0DF2 /* NYCSchoolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolsUITests.swift; sourceTree = "<group>"; };
 		D794F75528DE6EAC006E0DF2 /* NYCSchoolsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D794F76828DE7795006E0DF2 /* f9bf-2cp4-schools.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "f9bf-2cp4-schools.json"; sourceTree = "<group>"; };
+		D794F76928DE7795006E0DF2 /* f9bf-2cp4-sat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "f9bf-2cp4-sat.json"; sourceTree = "<group>"; };
+		D794F76E28DE784A006E0DF2 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		D794F77228DE7874006E0DF2 /* SatScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatScore.swift; sourceTree = "<group>"; };
+		D794F77628DE788E006E0DF2 /* SchoolPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolPresenter.swift; sourceTree = "<group>"; };
+		D794F77B28DE78AD006E0DF2 /* SatScorePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatScorePresenter.swift; sourceTree = "<group>"; };
+		D794F77F28DE78CB006E0DF2 /* SchoolViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolViewModel.swift; sourceTree = "<group>"; };
+		D794F78328DE78E9006E0DF2 /* SatScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatScoreViewModel.swift; sourceTree = "<group>"; };
+		D794F78728DE795E006E0DF2 /* SchoolInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolInterface.swift; sourceTree = "<group>"; };
+		D794F78B28DE7979006E0DF2 /* SatScoreInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatScoreInterface.swift; sourceTree = "<group>"; };
+		D794F79028DE8CA0006E0DF2 /* SchoolDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDataSource.swift; sourceTree = "<group>"; };
+		D794F79428DE8CB4006E0DF2 /* SatScoreDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatScoreDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +125,13 @@
 		D794F72628DE6EA9006E0DF2 = {
 			isa = PBXGroup;
 			children = (
+				D794F78F28DE8C7A006E0DF2 /* DataSource */,
+				D794F76728DE75F8006E0DF2 /* Assets */,
+				D794F76628DE75EF006E0DF2 /* Model */,
+				D794F76528DE75D3006E0DF2 /* Interface */,
+				D794F76428DE75CB006E0DF2 /* Presenter */,
+				D794F76328DE75C1006E0DF2 /* ViewController */,
+				D794F76228DE75B1006E0DF2 /* ViewModel */,
 				D794F73128DE6EA9006E0DF2 /* NYCSchools */,
 				D794F74828DE6EAC006E0DF2 /* NYCSchoolsTests */,
 				D794F75228DE6EAC006E0DF2 /* NYCSchoolsUITests */,
@@ -101,7 +154,6 @@
 			children = (
 				D794F73228DE6EA9006E0DF2 /* AppDelegate.swift */,
 				D794F73428DE6EA9006E0DF2 /* SceneDelegate.swift */,
-				D794F73628DE6EA9006E0DF2 /* ViewController.swift */,
 				D794F73828DE6EA9006E0DF2 /* Main.storyboard */,
 				D794F73B28DE6EAC006E0DF2 /* Assets.xcassets */,
 				D794F73D28DE6EAC006E0DF2 /* LaunchScreen.storyboard */,
@@ -125,6 +177,68 @@
 				D794F75528DE6EAC006E0DF2 /* NYCSchoolsUITestsLaunchTests.swift */,
 			);
 			path = NYCSchoolsUITests;
+			sourceTree = "<group>";
+		};
+		D794F76228DE75B1006E0DF2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D794F77F28DE78CB006E0DF2 /* SchoolViewModel.swift */,
+				D794F78328DE78E9006E0DF2 /* SatScoreViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D794F76328DE75C1006E0DF2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D794F73628DE6EA9006E0DF2 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D794F76428DE75CB006E0DF2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D794F77628DE788E006E0DF2 /* SchoolPresenter.swift */,
+				D794F77B28DE78AD006E0DF2 /* SatScorePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D794F76528DE75D3006E0DF2 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D794F78728DE795E006E0DF2 /* SchoolInterface.swift */,
+				D794F78B28DE7979006E0DF2 /* SatScoreInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		D794F76628DE75EF006E0DF2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D794F76E28DE784A006E0DF2 /* School.swift */,
+				D794F77228DE7874006E0DF2 /* SatScore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D794F76728DE75F8006E0DF2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D794F76928DE7795006E0DF2 /* f9bf-2cp4-sat.json */,
+				D794F76828DE7795006E0DF2 /* f9bf-2cp4-schools.json */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		D794F78F28DE8C7A006E0DF2 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				D794F79028DE8CA0006E0DF2 /* SchoolDataSource.swift */,
+				D794F79428DE8CB4006E0DF2 /* SatScoreDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +345,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D794F76C28DE7795006E0DF2 /* f9bf-2cp4-sat.json in Resources */,
 				D794F73F28DE6EAC006E0DF2 /* LaunchScreen.storyboard in Resources */,
 				D794F73C28DE6EAC006E0DF2 /* Assets.xcassets in Resources */,
 				D794F73A28DE6EA9006E0DF2 /* Main.storyboard in Resources */,
+				D794F76A28DE7795006E0DF2 /* f9bf-2cp4-schools.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +357,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D794F76D28DE7795006E0DF2 /* f9bf-2cp4-sat.json in Resources */,
+				D794F76B28DE7795006E0DF2 /* f9bf-2cp4-schools.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +376,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D794F78428DE78E9006E0DF2 /* SatScoreViewModel.swift in Sources */,
 				D794F73728DE6EA9006E0DF2 /* ViewController.swift in Sources */,
+				D794F77C28DE78AD006E0DF2 /* SatScorePresenter.swift in Sources */,
 				D794F73328DE6EA9006E0DF2 /* AppDelegate.swift in Sources */,
+				D794F79128DE8CA0006E0DF2 /* SchoolDataSource.swift in Sources */,
 				D794F73528DE6EA9006E0DF2 /* SceneDelegate.swift in Sources */,
+				D794F78028DE78CB006E0DF2 /* SchoolViewModel.swift in Sources */,
+				D794F78C28DE7979006E0DF2 /* SatScoreInterface.swift in Sources */,
+				D794F79528DE8CB4006E0DF2 /* SatScoreDataSource.swift in Sources */,
+				D794F76F28DE784A006E0DF2 /* School.swift in Sources */,
+				D794F77728DE788E006E0DF2 /* SchoolPresenter.swift in Sources */,
+				D794F77328DE7874006E0DF2 /* SatScore.swift in Sources */,
+				D794F78828DE795E006E0DF2 /* SchoolInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +396,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D794F78128DE78CB006E0DF2 /* SchoolViewModel.swift in Sources */,
+				D794F78928DE795E006E0DF2 /* SchoolInterface.swift in Sources */,
+				D794F78528DE78E9006E0DF2 /* SatScoreViewModel.swift in Sources */,
+				D794F78D28DE7979006E0DF2 /* SatScoreInterface.swift in Sources */,
+				D794F77828DE788E006E0DF2 /* SchoolPresenter.swift in Sources */,
+				D794F77D28DE78AD006E0DF2 /* SatScorePresenter.swift in Sources */,
+				D794F79228DE8CA0006E0DF2 /* SchoolDataSource.swift in Sources */,
 				D794F74A28DE6EAC006E0DF2 /* NYCSchoolsTests.swift in Sources */,
+				D794F77428DE7874006E0DF2 /* SatScore.swift in Sources */,
+				D794F79628DE8CB4006E0DF2 /* SatScoreDataSource.swift in Sources */,
+				D794F77028DE784A006E0DF2 /* School.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +414,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D794F77E28DE78AD006E0DF2 /* SatScorePresenter.swift in Sources */,
+				D794F78E28DE7979006E0DF2 /* SatScoreInterface.swift in Sources */,
 				D794F75428DE6EAC006E0DF2 /* NYCSchoolsUITests.swift in Sources */,
+				D794F78628DE78E9006E0DF2 /* SatScoreViewModel.swift in Sources */,
+				D794F77928DE788E006E0DF2 /* SchoolPresenter.swift in Sources */,
+				D794F77528DE7874006E0DF2 /* SatScore.swift in Sources */,
+				D794F79328DE8CA0006E0DF2 /* SchoolDataSource.swift in Sources */,
+				D794F77128DE784A006E0DF2 /* School.swift in Sources */,
 				D794F75628DE6EAC006E0DF2 /* NYCSchoolsUITestsLaunchTests.swift in Sources */,
+				D794F78A28DE795E006E0DF2 /* SchoolInterface.swift in Sources */,
+				D794F79728DE8CB4006E0DF2 /* SatScoreDataSource.swift in Sources */,
+				D794F78228DE78CB006E0DF2 /* SchoolViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
