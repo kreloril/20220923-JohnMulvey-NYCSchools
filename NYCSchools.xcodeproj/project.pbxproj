@@ -56,6 +56,10 @@
 		D794F7A228DF33C8006E0DF2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F7A128DF33C8006E0DF2 /* NetworkManager.swift */; };
 		D794F7A328DF33C8006E0DF2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F7A128DF33C8006E0DF2 /* NetworkManager.swift */; };
 		D794F7A428DF33C8006E0DF2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F7A128DF33C8006E0DF2 /* NetworkManager.swift */; };
+		D794F7A628DFAEF0006E0DF2 /* NYCAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D794F7A528DFAEF0006E0DF2 /* NYCAssets.xcassets */; };
+		D794F7A728DFAEF0006E0DF2 /* NYCAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D794F7A528DFAEF0006E0DF2 /* NYCAssets.xcassets */; };
+		D794F7AA28DFBE10006E0DF2 /* NYCSchoolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F7A928DFBE10006E0DF2 /* NYCSchoolTableViewCell.swift */; };
+		D794F7AB28DFBE10006E0DF2 /* NYCSchoolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F7A928DFBE10006E0DF2 /* NYCSchoolTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +107,8 @@
 		D794F79428DE8CB4006E0DF2 /* SatScoreDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatScoreDataSource.swift; sourceTree = "<group>"; };
 		D794F79D28DF33B8006E0DF2 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		D794F7A128DF33C8006E0DF2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D794F7A528DFAEF0006E0DF2 /* NYCAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = NYCAssets.xcassets; sourceTree = "<group>"; };
+		D794F7A928DFBE10006E0DF2 /* NYCSchoolTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,8 @@
 		D794F72628DE6EA9006E0DF2 = {
 			isa = PBXGroup;
 			children = (
+				D794F7A828DFBDE2006E0DF2 /* View */,
+				D794F7A528DFAEF0006E0DF2 /* NYCAssets.xcassets */,
 				D794F79828DF2507006E0DF2 /* Utils */,
 				D794F78F28DE8C7A006E0DF2 /* DataSource */,
 				D794F76728DE75F8006E0DF2 /* Assets */,
@@ -259,6 +267,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		D794F7A828DFBDE2006E0DF2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D794F7A928DFBE10006E0DF2 /* NYCSchoolTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -366,6 +382,7 @@
 				D794F76C28DE7795006E0DF2 /* f9bf-2cp4-sat.json in Resources */,
 				D794F73F28DE6EAC006E0DF2 /* LaunchScreen.storyboard in Resources */,
 				D794F73C28DE6EAC006E0DF2 /* Assets.xcassets in Resources */,
+				D794F7A628DFAEF0006E0DF2 /* NYCAssets.xcassets in Resources */,
 				D794F73A28DE6EA9006E0DF2 /* Main.storyboard in Resources */,
 				D794F76A28DE7795006E0DF2 /* f9bf-2cp4-schools.json in Resources */,
 			);
@@ -375,6 +392,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D794F7A728DFAEF0006E0DF2 /* NYCAssets.xcassets in Resources */,
 				D794F76D28DE7795006E0DF2 /* f9bf-2cp4-sat.json in Resources */,
 				D794F76B28DE7795006E0DF2 /* f9bf-2cp4-schools.json in Resources */,
 			);
@@ -406,6 +424,7 @@
 				D794F78C28DE7979006E0DF2 /* SatScoreInterface.swift in Sources */,
 				D794F79528DE8CB4006E0DF2 /* SatScoreDataSource.swift in Sources */,
 				D794F76F28DE784A006E0DF2 /* School.swift in Sources */,
+				D794F7AA28DFBE10006E0DF2 /* NYCSchoolTableViewCell.swift in Sources */,
 				D794F77728DE788E006E0DF2 /* SchoolPresenter.swift in Sources */,
 				D794F77328DE7874006E0DF2 /* SatScore.swift in Sources */,
 				D794F78828DE795E006E0DF2 /* SchoolInterface.swift in Sources */,
@@ -426,6 +445,7 @@
 				D794F79F28DF33B8006E0DF2 /* FileManager.swift in Sources */,
 				D794F74A28DE6EAC006E0DF2 /* NYCSchoolsTests.swift in Sources */,
 				D794F7A328DF33C8006E0DF2 /* NetworkManager.swift in Sources */,
+				D794F7AB28DFBE10006E0DF2 /* NYCSchoolTableViewCell.swift in Sources */,
 				D794F77428DE7874006E0DF2 /* SatScore.swift in Sources */,
 				D794F79628DE8CB4006E0DF2 /* SatScoreDataSource.swift in Sources */,
 				D794F77028DE784A006E0DF2 /* School.swift in Sources */,

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3oP-5t-PoF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,12 +13,80 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="NYCSchoolViewController" customModule="NYCSchools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="130" estimatedRowHeight="-1" sectionHeaderHeight="1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4bb-Vt-3Jo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="schoolcell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellSchool" rowHeight="130" id="Wgg-cI-Ld4" customClass="NYCSchoolTableViewCell" customModule="NYCSchools" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="49.5" width="414" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wgg-cI-Ld4" id="81Z-B0-1Bc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9F-0U-77M">
+                                                    <rect key="frame" x="7" y="5" width="388" height="120"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujt-U3-g3N">
+                                                            <rect key="frame" x="54" y="52" width="286" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoc-MB-oVC">
+                                                            <rect key="frame" x="54" y="8" width="286" height="36"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="36" id="vKK-38-ruG"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="ujt-U3-g3N" secondAttribute="trailing" constant="48" id="1OT-z8-hBs"/>
+                                                        <constraint firstItem="ujt-U3-g3N" firstAttribute="top" secondItem="yoc-MB-oVC" secondAttribute="bottom" constant="8" id="8mQ-jz-nVh"/>
+                                                        <constraint firstAttribute="trailing" secondItem="yoc-MB-oVC" secondAttribute="trailing" constant="48" id="MkQ-5j-z1P"/>
+                                                        <constraint firstItem="yoc-MB-oVC" firstAttribute="leading" secondItem="c9F-0U-77M" secondAttribute="leading" constant="54" id="TLT-li-p8n"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ujt-U3-g3N" secondAttribute="bottom" constant="28" id="XSs-ri-AMQ"/>
+                                                        <constraint firstItem="ujt-U3-g3N" firstAttribute="leading" secondItem="c9F-0U-77M" secondAttribute="leading" constant="54" id="g1t-YY-0Hw"/>
+                                                        <constraint firstItem="yoc-MB-oVC" firstAttribute="top" secondItem="c9F-0U-77M" secondAttribute="top" constant="8" id="sUC-MF-YA0"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="c9F-0U-77M" secondAttribute="trailing" constant="19" id="ml9-Dr-OgE"/>
+                                                <constraint firstItem="c9F-0U-77M" firstAttribute="top" secondItem="81Z-B0-1Bc" secondAttribute="top" constant="5" id="oQM-Wf-QfB"/>
+                                                <constraint firstItem="c9F-0U-77M" firstAttribute="leading" secondItem="81Z-B0-1Bc" secondAttribute="leading" constant="7" id="u5i-3w-nAX"/>
+                                                <constraint firstAttribute="bottom" secondItem="c9F-0U-77M" secondAttribute="bottom" constant="5" id="wSP-l6-QbM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelAddress" destination="ujt-U3-g3N" id="OVP-JQ-dWX"/>
+                                            <outlet property="labelTitle" destination="yoc-MB-oVC" id="jHl-ML-OWT"/>
+                                            <outlet property="viewContent" destination="c9F-0U-77M" id="A2J-Fe-AjJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4bb-Vt-3Jo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="E3J-4M-kSh"/>
+                            <constraint firstAttribute="bottom" secondItem="4bb-Vt-3Jo" secondAttribute="bottom" id="H3c-Ga-hAb"/>
+                            <constraint firstItem="4bb-Vt-3Jo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TGT-dZ-nju"/>
+                            <constraint firstItem="4bb-Vt-3Jo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XeX-qw-7si"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zvS-V0-DXc"/>
+                    <connections>
+                        <outlet property="tableView" destination="4bb-Vt-3Jo" id="Ybq-Zi-ldT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,6 +114,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
