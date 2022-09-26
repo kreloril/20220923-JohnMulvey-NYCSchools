@@ -8,12 +8,19 @@
 import UIKit
 /*
  
- Holds o
+ Presenenter, responsabile for handling view content
  
  */
 
+protocol SchoolPresenterDelegate : NSObject {
+    
+    func schoolSelected(with school:SchoolViewModel, with scores:SatScoreViewModel)
+    
+}
+
 class SchoolPresenter: NSObject, UITableViewDelegate, UITableViewDataSource {
 
+    weak var delegate:SchoolPresenterDelegate?
     
     var viewModelScores:Dictionary<String,SatScoreViewModel>?
     var viewModelSchools:[SchoolViewModel]?
@@ -38,14 +45,70 @@ class SchoolPresenter: NSObject, UITableViewDelegate, UITableViewDataSource {
         
     }
     
+    var title: String {
+        return "NYC School"
+    }
 }
 
+extension SchoolPresenter {
+    
+    // Find the school we need
+    
+    func schoolForIndex(index:Int) -> SchoolViewModel? {
+        
+        guard let objects = self.viewModelSchools else {
+            return nil
+        }
+        
+        if index < 0 || index > objects.count {
+            return nil
+        }
+        
+        return objects[index]
+    }
+    
+    // use the dbn, to find the score we need
+    
+    func satScoreForSchool(dbn:String) -> SatScoreViewModel? {
+        
+        if dbn.isEmpty {
+            return nil
+        }
+        
+        guard let objects = self.viewModelScores else {
+            return nil
+        }
+       
+        return objects[dbn]
+    }
+    // quick find the dbn we are looking for
+    func dbnForSchoolIndex(index:Int, schoolIn: inout SchoolViewModel?) -> String {
+        var returnString:String  = ""
+        
+        let school = schoolForIndex(index: index)
+        
+        if let school = school {
+            returnString = school.dbn
+            schoolIn = school
+        }
+        
+        return returnString
+    }
+    
+    func schoolSelectionDelegate(school:SchoolViewModel,score:SatScoreViewModel) {
+        
+        if let del = self.delegate {
+            del.schoolSelected(with: school, with: score)
+        }
+    }
+    
+}
 
 
 /*
  
  Tableview Delegates
- 
+ normal delegates used for tableview styling
  */
 
 extension SchoolPresenter  {
@@ -55,10 +118,39 @@ extension SchoolPresenter  {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 1
+        return 1
     }
     
+    //
+    //  find the dbn, look up scores, then call delegate
+    //
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: false)
+        
+        var school:SchoolViewModel?
+        let dbn = dbnForSchoolIndex(index: indexPath.section,schoolIn: &school)
+        
+        if dbn.isEmpty {
+            return
+        }
+
+        var satScores:SatScoreViewModel? = satScoreForSchool(dbn: dbn)
+        
+
+        if let school = school  {
+            // Protect against scores not found in db
+            if satScores == nil {
+                satScores = SatScoreViewModel(with: school)
+            }
+            
+            guard let satScores = satScores else {
+                return
+            }
+
+            schoolSelectionDelegate(school: school, score: satScores)
+        }
         
     }
     
@@ -73,12 +165,12 @@ extension SchoolPresenter  {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
       
         let view = UIView()
-        view.backgroundColor = UIColor.clear
+        view.backgroundColor = UIColor.darkGray
         return view
     }
     
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 2.0
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.0
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
