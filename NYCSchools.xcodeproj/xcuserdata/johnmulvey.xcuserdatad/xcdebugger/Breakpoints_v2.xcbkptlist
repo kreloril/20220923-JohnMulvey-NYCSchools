@@ -14,10 +14,58 @@
             filePath = "ViewController/NYCSatScoreViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "NYCSatScoreViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A6DE73A-EBC0-4DBB-B003-5F0F0C824D7B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ViewController/NYCSchoolViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "refreshData(sender:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1A6DE73A-EBC0-4DBB-B003-5F0F0C824D7B - c7994d26ef8f8826"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;NYCSchools.SatScore&gt;&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Array&lt;NYCSchools.School&gt;&gt;) -&gt; () in NYCSchools.NYCSchoolViewController.refreshData(sender: __C.UIBarButtonItem) -&gt; ()"
+                  moduleName = "NYCSchools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/johnmulvey/projects/20220923JohnMulvey-NYCSchools/ViewController/NYCSchoolViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "157">
+               </Location>
+               <Location
+                  uuid = "1A6DE73A-EBC0-4DBB-B003-5F0F0C824D7B - c7994d26ef8f8826"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;NYCSchools.SatScore&gt;&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Array&lt;NYCSchools.School&gt;&gt;) -&gt; () in NYCSchools.NYCSchoolViewController.refreshData(sender: __C.UIBarButtonItem) -&gt; ()"
+                  moduleName = "NYCSchools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/johnmulvey/projects/20220923JohnMulvey-NYCSchools/ViewController/NYCSchoolViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "182">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

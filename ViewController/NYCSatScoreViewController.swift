@@ -9,8 +9,6 @@ import UIKit
 
 class NYCSatScoreViewController: UIViewController, SatScorePresenterDelegate {
 
-    
-
     @IBOutlet weak var tableView: UITableView!
     var presenter:SatScorePresenter?
     
@@ -33,15 +31,15 @@ class NYCSatScoreViewController: UIViewController, SatScorePresenterDelegate {
 extension NYCSatScoreViewController {
     
     func failAlert() {
-        let alertView = UIAlertController(title: "Error!", message: "Unable to launch url on emulator", preferredStyle: .alert)
+        let alertView = UIAlertController(title: NYCSatScoreViewControllerConstants.errorDialogAlert, message:NYCSatScoreViewControllerConstants.errorEmulatorText , preferredStyle: .alert)
         
-        alertView.addAction(UIAlertAction(title:"Ok", style: .default, handler:nil))
+        alertView.addAction(UIAlertAction(title:NYCSatScoreViewControllerConstants.buttonOKText, style: .default, handler:nil))
         
         self.present(alertView, animated: true, completion: nil)
     }
     
     func satScoreOpenContactPage() {
-        let alert = UIAlertController(title: "Contact Method", message: "", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: NYCSatScoreViewControllerConstants.popOverTextContactMethod, message: "", preferredStyle: .actionSheet)
         
         if self.presenter?.emailURL != nil {
         
@@ -75,7 +73,7 @@ extension NYCSatScoreViewController {
             
         }
         
-        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: { UIAlertAction in
+        alert.addAction(UIAlertAction(title: NYCSatScoreViewControllerConstants.buttonCancelText, style: .destructive, handler: { UIAlertAction in
             
         }))
         

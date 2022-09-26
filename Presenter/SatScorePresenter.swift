@@ -34,19 +34,17 @@ class SatScorePresenter: NSObject, UITableViewDelegate, UITableViewDataSource {
      
      */
     var popUpEmail:String {
-        guard let school = selectedSchool else { return ""}
-        
+        guard let school = selectedSchool else { return "" }
         return "Email : \(school.schoolEmail)"
     }
     
     var popUpPhone:String {
-        guard let school = selectedSchool else { return ""}
-        
+        guard let school = selectedSchool else { return "" }
         return "Phone : \(school.schoolPhone)"
     }
 
     var emailURL : URL? {
-        guard let school = selectedSchool else { return nil}
+        guard let school = selectedSchool else { return nil }
         return  school.emailUrl
     }
     
@@ -65,9 +63,9 @@ extension SatScorePresenter {
         let hasScores = selectedScore?.satScoreDataFound
         
         if indexPath.row == 1 && hasScores == true {
-            return 138
+            return ScorePresenterConstants.defaultRow1Height
         } else if indexPath.row == 3 {
-            return 100
+            return ScorePresenterConstants.defaultRow3Height
         }
         
         return UITableView.automaticDimension
@@ -105,7 +103,7 @@ extension SatScorePresenter {
         switch (indexPath.row) {
             
         case 0: do {
-            cell = tableView.dequeueReusableCell(withIdentifier: "titleCell")
+            cell = tableView.dequeueReusableCell(withIdentifier: ScorePresenterConstants.cellNameTitle)
             cell?.textLabel?.text = "\(score.school_name)\n\n\(school.address)"
             cell?.textLabel?.numberOfLines = 0;
             cell?.textLabel?.textAlignment = .center
@@ -117,16 +115,16 @@ extension SatScorePresenter {
         case 1: do {
             
             if score.satScoreDataFound == false {
-                cell = tableView.dequeueReusableCell(withIdentifier: "titleCell")
+                cell = tableView.dequeueReusableCell(withIdentifier: ScorePresenterConstants.cellNameTitle)
                 cell?.selectionStyle = .none
-                cell?.textLabel?.text = "No SAT scores present"
+                cell?.textLabel?.text = ScorePresenterConstants.satScoresNotPresent
                 cell?.textLabel?.numberOfLines = 0
                 cell?.textLabel?.textColor = UIColor.red
                 cell?.textLabel?.textAlignment = .center
                 break
             }
             
-            let scoreCell = tableView.dequeueReusableCell(withIdentifier: "satscoreInfo") as? NYCSATScoresTableViewCell
+            let scoreCell = tableView.dequeueReusableCell(withIdentifier: ScorePresenterConstants.satScoreInfoCell) as? NYCSATScoresTableViewCell
             scoreCell?.selectionStyle = .none
             scoreCell?.labelMathScore.text = score.scoreMath
             scoreCell?.labelReadingScore.text = score.scoreReading
@@ -137,7 +135,7 @@ extension SatScorePresenter {
         }
             
         case 2: do {
-            cell = tableView.dequeueReusableCell(withIdentifier: "schoolDescCell")
+            cell = tableView.dequeueReusableCell(withIdentifier: ScorePresenterConstants.schoolDescCell)
             cell?.textLabel?.text = school.schoolDescription
             cell?.textLabel?.numberOfLines = 0;
             cell?.selectionStyle = .none
@@ -145,11 +143,11 @@ extension SatScorePresenter {
         }
         
         case 3: do {
-            cell = tableView.dequeueReusableCell(withIdentifier: "titleCell")
+            cell = tableView.dequeueReusableCell(withIdentifier: ScorePresenterConstants.cellNameTitle)
             cell?.selectionStyle = .default
             cell?.backgroundColor = UIColor.blue
             cell?.layer.cornerRadius = 6.0
-            cell?.textLabel?.text = "Contact School"
+            cell?.textLabel?.text = ScorePresenterConstants.buttonContactSchoolName
             cell?.textLabel?.textAlignment = .center
             cell?.textLabel?.textColor = UIColor.white
             cell?.textLabel?.font = UIFont.boldSystemFont(ofSize: 22)
