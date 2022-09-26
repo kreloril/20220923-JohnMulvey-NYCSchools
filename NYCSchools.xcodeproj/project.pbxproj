@@ -62,6 +62,9 @@
 		D794F7AB28DFBE10006E0DF2 /* NYCSchoolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F7A928DFBE10006E0DF2 /* NYCSchoolTableViewCell.swift */; };
 		D794F7AD28E0DF9D006E0DF2 /* NYCSatScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F7AC28E0DF9D006E0DF2 /* NYCSatScoreViewController.swift */; };
 		D794F7AF28E12BC7006E0DF2 /* NYCSATScoresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F7AE28E12BC7006E0DF2 /* NYCSATScoresTableViewCell.swift */; };
+		D794F7B128E20010006E0DF2 /* NYCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F7B028E20010006E0DF2 /* NYCConstants.swift */; };
+		D794F7B228E20010006E0DF2 /* NYCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F7B028E20010006E0DF2 /* NYCConstants.swift */; };
+		D794F7B328E20010006E0DF2 /* NYCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F7B028E20010006E0DF2 /* NYCConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +116,7 @@
 		D794F7A928DFBE10006E0DF2 /* NYCSchoolTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolTableViewCell.swift; sourceTree = "<group>"; };
 		D794F7AC28E0DF9D006E0DF2 /* NYCSatScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSatScoreViewController.swift; sourceTree = "<group>"; };
 		D794F7AE28E12BC7006E0DF2 /* NYCSATScoresTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSATScoresTableViewCell.swift; sourceTree = "<group>"; };
+		D794F7B028E20010006E0DF2 /* NYCConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +272,7 @@
 			children = (
 				D794F79D28DF33B8006E0DF2 /* FileManager.swift */,
 				D794F7A128DF33C8006E0DF2 /* NetworkManager.swift */,
+				D794F7B028E20010006E0DF2 /* NYCConstants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -431,6 +436,7 @@
 				D794F78C28DE7979006E0DF2 /* SatScoreInterface.swift in Sources */,
 				D794F79528DE8CB4006E0DF2 /* SatScoreDataSource.swift in Sources */,
 				D794F7AF28E12BC7006E0DF2 /* NYCSATScoresTableViewCell.swift in Sources */,
+				D794F7B128E20010006E0DF2 /* NYCConstants.swift in Sources */,
 				D794F76F28DE784A006E0DF2 /* School.swift in Sources */,
 				D794F7AA28DFBE10006E0DF2 /* NYCSchoolTableViewCell.swift in Sources */,
 				D794F77728DE788E006E0DF2 /* SchoolPresenter.swift in Sources */,
@@ -451,6 +457,7 @@
 				D794F77D28DE78AD006E0DF2 /* SatScorePresenter.swift in Sources */,
 				D794F79228DE8CA0006E0DF2 /* SchoolDataSource.swift in Sources */,
 				D794F79F28DF33B8006E0DF2 /* FileManager.swift in Sources */,
+				D794F7B228E20010006E0DF2 /* NYCConstants.swift in Sources */,
 				D794F74A28DE6EAC006E0DF2 /* NYCSchoolsTests.swift in Sources */,
 				D794F7A328DF33C8006E0DF2 /* NetworkManager.swift in Sources */,
 				D794F7AB28DFBE10006E0DF2 /* NYCSchoolTableViewCell.swift in Sources */,
@@ -472,6 +479,7 @@
 				D794F77928DE788E006E0DF2 /* SchoolPresenter.swift in Sources */,
 				D794F77528DE7874006E0DF2 /* SatScore.swift in Sources */,
 				D794F79328DE8CA0006E0DF2 /* SchoolDataSource.swift in Sources */,
+				D794F7B328E20010006E0DF2 /* NYCConstants.swift in Sources */,
 				D794F77128DE784A006E0DF2 /* School.swift in Sources */,
 				D794F75628DE6EAC006E0DF2 /* NYCSchoolsUITestsLaunchTests.swift in Sources */,
 				D794F78A28DE795E006E0DF2 /* SchoolInterface.swift in Sources */,

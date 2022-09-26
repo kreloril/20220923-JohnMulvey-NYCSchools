@@ -8,7 +8,7 @@
 import UIKit
 /*
  
- Presenenter, responsabile for handling view content
+ Presenter, responsable for handling view content
  
  */
 
@@ -40,13 +40,18 @@ class SchoolPresenter: NSObject, UITableViewDelegate, UITableViewDataSource {
         if let source = sourceScores {
             viewModelScores = SatScoreInterface.valueObjectsFromModel(objects: source)
         }
-        
-        
+    }
+    
+    init(schools:[School], scores:[SatScore]) {
+        super.init()
+       
+        viewModelSchools = SchoolInterface.valueObjectsFromModel(objects: schools)
+        viewModelScores = SatScoreInterface.valueObjectsFromModel(objects: scores)
         
     }
     
     var title: String {
-        return "NYC School"
+        return SchoolPresenterConstants.presenterTitleName
     }
 }
 
@@ -170,16 +175,16 @@ extension SchoolPresenter  {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 0.0
+        return SchoolPresenterConstants.defaultHeaderHeight
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 125
+        return SchoolPresenterConstants.defaultRowHeight
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellSchool", for: indexPath) as? NYCSchoolTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: SchoolPresenterConstants.presenterSchoolCellName, for: indexPath) as? NYCSchoolTableViewCell
         
         if let objects = self.viewModelSchools, let cell = cell {
    
