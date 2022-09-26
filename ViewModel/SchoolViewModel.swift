@@ -14,10 +14,12 @@ class SchoolViewModel: NSObject {
     var address:String = ""
     var schoolDescription:String = ""
     var location:String = ""
-    var phonenumer:String = ""
+    var schoolPhone:String = ""
     var schoolEmail:String = ""
     var website:String = ""
     
+    var emailUrl:URL?
+    var phoneUrl:URL?
     
     init(with school:School) {
         super.init()
@@ -25,11 +27,11 @@ class SchoolViewModel: NSObject {
         self.dbn = school.dbn;
         
         if let addr = school.primary_address_line_1, let city = school.city, let zip = school.zip, let statecode = school.state_code {
-            self.address = "\(addr) \(city), \(statecode) \(zip)"
+            self.address = "\(addr), \(city) \(statecode) \(zip)"
         }
         
         if let desc = school.overview_paragraph {
-            self.schoolDescription = desc
+            self.schoolDescription = "Overview \n\n \(desc)"
         }
         
         if let loc = school.location {
@@ -37,7 +39,7 @@ class SchoolViewModel: NSObject {
         }
         
         if let pn = school.phone_number {
-            self.phonenumer = pn
+            self.schoolPhone = pn
         }
         
         if let email = school.school_email {
@@ -46,6 +48,18 @@ class SchoolViewModel: NSObject {
         
         if let ws = school.website {
             self.website = ws
+        }
+       
+        if schoolPhone.isEmpty == false {
+            var phonen = self.schoolPhone;
+            phonen = phonen.replacingOccurrences(of: "-", with: "")
+            phonen = phonen.replacingOccurrences(of: "(", with: "")
+            phonen = phonen.replacingOccurrences(of: ")", with: "")
+            self.phoneUrl = URL(string: "tel://\(phonen)")
+        }
+        
+        if schoolEmail.isEmpty == false {
+            self.emailUrl = URL(string: "mailto://\(self.schoolEmail)")
         }
     }
 }

@@ -60,6 +60,8 @@
 		D794F7A728DFAEF0006E0DF2 /* NYCAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D794F7A528DFAEF0006E0DF2 /* NYCAssets.xcassets */; };
 		D794F7AA28DFBE10006E0DF2 /* NYCSchoolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F7A928DFBE10006E0DF2 /* NYCSchoolTableViewCell.swift */; };
 		D794F7AB28DFBE10006E0DF2 /* NYCSchoolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F7A928DFBE10006E0DF2 /* NYCSchoolTableViewCell.swift */; };
+		D794F7AD28E0DF9D006E0DF2 /* NYCSatScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F7AC28E0DF9D006E0DF2 /* NYCSatScoreViewController.swift */; };
+		D794F7AF28E12BC7006E0DF2 /* NYCSATScoresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794F7AE28E12BC7006E0DF2 /* NYCSATScoresTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,8 @@
 		D794F7A128DF33C8006E0DF2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D794F7A528DFAEF0006E0DF2 /* NYCAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = NYCAssets.xcassets; sourceTree = "<group>"; };
 		D794F7A928DFBE10006E0DF2 /* NYCSchoolTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolTableViewCell.swift; sourceTree = "<group>"; };
+		D794F7AC28E0DF9D006E0DF2 /* NYCSatScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSatScoreViewController.swift; sourceTree = "<group>"; };
+		D794F7AE28E12BC7006E0DF2 /* NYCSATScoresTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSATScoresTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				D794F73628DE6EA9006E0DF2 /* NYCSchoolViewController.swift */,
+				D794F7AC28E0DF9D006E0DF2 /* NYCSatScoreViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				D794F7A928DFBE10006E0DF2 /* NYCSchoolTableViewCell.swift */,
+				D794F7AE28E12BC7006E0DF2 /* NYCSATScoresTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -413,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D794F79E28DF33B8006E0DF2 /* FileManager.swift in Sources */,
+				D794F7AD28E0DF9D006E0DF2 /* NYCSatScoreViewController.swift in Sources */,
 				D794F78428DE78E9006E0DF2 /* SatScoreViewModel.swift in Sources */,
 				D794F73728DE6EA9006E0DF2 /* NYCSchoolViewController.swift in Sources */,
 				D794F77C28DE78AD006E0DF2 /* SatScorePresenter.swift in Sources */,
@@ -423,6 +430,7 @@
 				D794F78028DE78CB006E0DF2 /* SchoolViewModel.swift in Sources */,
 				D794F78C28DE7979006E0DF2 /* SatScoreInterface.swift in Sources */,
 				D794F79528DE8CB4006E0DF2 /* SatScoreDataSource.swift in Sources */,
+				D794F7AF28E12BC7006E0DF2 /* NYCSATScoresTableViewCell.swift in Sources */,
 				D794F76F28DE784A006E0DF2 /* School.swift in Sources */,
 				D794F7AA28DFBE10006E0DF2 /* NYCSchoolTableViewCell.swift in Sources */,
 				D794F77728DE788E006E0DF2 /* SchoolPresenter.swift in Sources */,
